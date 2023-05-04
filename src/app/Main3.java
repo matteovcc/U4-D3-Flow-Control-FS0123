@@ -5,25 +5,25 @@ public class Main3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int numero = 2;
-		String numeroInLettere;
+		String numeroInChars;
 		switch (numero) {
 		  case 0:
-		    numeroInLettere = "zero";
+		    numeroInChars = "zero";
 		    break;
 		  case 1:
-		    numeroInLettere = "uno";
+		    numeroInChars = "uno";
 		    break;
 		  case 2:
-		    numeroInLettere = "due";
+		    numeroInChars = "due";
 		    break;
 		  case 3:
-		    numeroInLettere = "tre";
+		    numeroInChars = "tre";
 		    break;
 		  default:
 		    System.out.println("Non è compreso.");
 		    return;
 		}
-		System.out.println(numeroInLettere);
+		System.out.println(numeroInChars);
 
 	}
 

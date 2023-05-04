@@ -1,5 +1,5 @@
 package app;
-import java.util.Arrays;
+
 import java.util.Scanner;
 public class Main4 {
 
@@ -8,35 +8,16 @@ public class Main4 {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Inserisci la tua stringa");
 		String stringa = in.nextLine();
-//		stringa.split(",");
-		
-//		System.out.println(stringa.split(","));
-		
-		
-		
-//		while(stringa != "q") {
-//			System.out.println(stringa.split(","));
-//			break;
-//		}
-		
-//		if (stringa == ":q") {
+
+//		
+//		if (stringa.contains(":q")) {
 //			System.out.println("NON PUOI");
 //		}
-//		
-//		while(stringa != ":q") {			
-//			String[] arrayChar = stringa.split("");
-//			System.out.println(Arrays.toString(arrayChar));
-//			break;
-//			
-//		}
 		
-		if (stringa.contains(":q")) {
-			System.out.println("NON PUOI");
-		}
-		
-		while(!stringa.contains(":q")) {			
+		while(!stringa.equals(":q")) {			
 			String[] arrayChar = stringa.split("");
-			System.out.println(Arrays.toString(arrayChar));
+//			System.out.println(Arrays.toString(arrayChar));
+			System.out.println(String.join(",", arrayChar));
 			break;
 			
 		}
