@@ -19,10 +19,26 @@ public class Main4 {
 //			break;
 //		}
 		
-		while(stringa != ":q") {
+//		if (stringa == ":q") {
+//			System.out.println("NON PUOI");
+//		}
+//		
+//		while(stringa != ":q") {			
+//			String[] arrayChar = stringa.split("");
+//			System.out.println(Arrays.toString(arrayChar));
+//			break;
+//			
+//		}
+		
+		if (stringa.contains(":q")) {
+			System.out.println("NON PUOI");
+		}
+		
+		while(!stringa.contains(":q")) {			
 			String[] arrayChar = stringa.split("");
 			System.out.println(Arrays.toString(arrayChar));
 			break;
+			
 		}
 		in.close();
 		
